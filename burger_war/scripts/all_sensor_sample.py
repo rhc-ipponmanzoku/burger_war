@@ -112,8 +112,8 @@ class AllSensorBot(object):
 
 if __name__ == '__main__':
     rospy.init_node('all_sensor_sample')
-    bot = AllSensorBot(use_lidar=True, use_camera=True, use_imu=True,
-                       use_odom=True, use_joint_states=True)
+    bot = AllSensorBot(use_lidar=False, use_camera=False, use_imu=False,
+                       use_odom=True, use_joint_states=False)
     bot.strategy()
 
 

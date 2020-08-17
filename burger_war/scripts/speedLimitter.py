@@ -43,7 +43,7 @@ class SpeedLimitter(object):
 
 if __name__ == "__main__":
     rospy.init_node("speed_limitter")
-    MAX_LINEAR_VEL = float(rospy.get_param('~max_linear_vel', "0.22"))
+    MAX_LINEAR_VEL = float(rospy.get_param('~max_linear_vel', "0.5"))
     MAX_ANG_VEL = float(rospy.get_param('~max_ang_vel', "2.84"))
     speed_limitter = SpeedLimitter(MAX_LINEAR_VEL, MAX_ANG_VEL)
     rospy.spin()    
