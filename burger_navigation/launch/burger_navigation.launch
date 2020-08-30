@@ -83,7 +83,7 @@
     <param name="DWAPlannerROS/max_trans_vel" value="5.0" if="$(arg move_forward_only)" />
     <param name="DWAPlannerROS/min_trans_vel" value="0.3" if="$(arg move_forward_only)" />
     <param name="DWAPlannerROS/max_rot_vel" value="5.0" if="$(arg move_forward_only)" />
-    <param name="DWAPlannerROS/min_rot_vel" value="0.3" if="$(arg move_forward_only)" />
+    <param name="DWAPlannerROS/min_rot_vel" value="0.0" if="$(arg move_forward_only)" />
     <param name="DWAPlannerROS/acc_lim__x" value="1.0" if="$(arg move_forward_only)" />
     <param name="DWAPlannerROS/acc_lim__theta" value="1.0" if="$(arg move_forward_only)" />
 
